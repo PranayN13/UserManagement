@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Admin Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains a React.js application for an Admin Dashboard that allows users to view, search, edit, and delete user records. The application implements a user interface based on the provided requirements. Please refer to the image in the root directory for a visual representation.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+1. **Column Titles Standout:** The column titles are designed to stand out from the entries, providing clarity and easy identification.
 
-### `npm start`
+2. **Search Bar:** A search bar is provided at the top, allowing users to filter records based on any property. The search is dynamic and updates the displayed records accordingly.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. **Edit and Delete Rows:** Users can edit or delete rows in place. Note that these changes are expected to be in-memory only and are not persisted.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+4. **Pagination:** Pagination is implemented with each page containing 10 rows. Navigation buttons at the bottom allow users to jump to any page, including specific buttons for the first page, previous page, next page, and last page. Pagination updates dynamically based on search/filtering.
 
-### `npm test`
+5. **Row Selection:** Users can select one or more rows, with selected rows highlighted in a grayish background color. Multiple selected rows can be deleted at once using the 'Delete Selected' button.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+6. **Select/Deselect All:** A checkbox at the top-left serves as a shortcut to select or deselect all displayed rows on the current page.
 
-### `npm run build`
+7. **Placeholder and Search Icon:** The search box has a placeholder text starting with "Search," and the search can be triggered by pressing ENTER or clicking the search icon/button.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+8. **Action Elements:** Buttons with specific class names like edit, delete, and save serve as action elements for each row.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+9. **Navigation Elements:** Buttons for navigation (first page, previous page, next page, last page) are implemented as div/buttons with specific class names.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+10. **Bulk Delete:** The top-right bin icon serves as a bulk delete button for deleting selected rows.
 
-### `npm run eject`
+11. **Inline Editing:** Clicking the edit action in a row allows users to edit the record in place.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+12. **Delete Selected Button:** The bottom delete button has the text "Delete Selected" for deleting multiple selected rows.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+13. **FontAwesome Icons:** FontAwesome is used for the search, edit, delete, and bin icons.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Technologies Used
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- React.js
+- CSS
+- FontAwesome
 
-## Learn More
+## Deployment
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The application is deployed and can be accessed at https://admin-user-management.netlify.app/.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Feel free to explore and test the functionalities of the Admin Dashboard!
 
-### Code Splitting
+## Local Development
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+To run the application locally:
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Clone the repository: `git clone https://github.com/PranayN13/UserManagement`
+2. Navigate to the project directory: `cd UserManagement`
+3. Install dependencies: `npm install`
+4. Start the development server: `npm start`
+5. Open your browser and visit `http://localhost:3000`
